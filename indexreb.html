@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 4">
+    <title>Sidebar template</title>
+ 
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/2f43b19a59.js" crossorigin="anonymous"></script>
+    <!-- Main css -->
+    <link rel="stylesheet" type="text/css" href="src/maincss.css" />
+</head>
+
+<body>
+    <!------------- Loader wrapper ------------->
+    <div class="loader-wrapper" >       
+      <div id="loader">       
+        <span class="loader"> <span class="loader-inner"></span></span>
+      </div>
+    </div> 
+   
+    <!------------- Once is loaded ------------->
+    <div class="page-wrapper chiller-theme toggled"> 
+        <a id="show-sidebar" class="btn btn-sm btn-dark" href="#"> MENU
+            <i class="fas fa-bars"></i>
+        </a>
+  
+        <nav id="sidebar" class="sidebar-wrapper">
+        <div class="sidebar-content">
+            <div class="sidebar-brand">
+                <a href="#">COMPANY    </a>
+                <a href="#" id = "close-sidebar"> <i class="fas fa-bars"></i> </a>
+            </div>
+    
+            <div class="sidebar-footer">
+                <a href="#">
+                    <i class="fa fa-bell"></i>
+                    <span class="badge badge-pill badge-warning notification">3</span>
+                </a>
+                <a href="#">
+                    <i class="fa fa-envelope"></i>
+                    <span class="badge badge-pill badge-success notification">7</span>
+                </a>
+                <a href="#">
+                    <i class="fa fa-cog"></i>
+                    <span class="badge-sonar"></span>
+                </a>
+                <a href="#">
+                    <i class="fa fa-power-off"></i>
+                </a>
+            </div>
+    
+    
+            
+            <!-- sidebar-status  -->
+            <div class="sidebar-header">
+                <div class="user-pic">
+                    <img class="img-responsive img-rounded" src="https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg"
+                        alt="User picture">
+                </div>
+                <div class="user-info">
+                    <span class="user-name">Marco
+                        <strong>Villafuerte</strong>
+                    </span>
+                    <span class="user-role">Administrator</span>
+                    <span class="user-status">
+                        <i class="fa fa-circle"></i>
+                        <span>Online</span>
+                    </span>
+                </div>
+            </div>
+            
+            
+            
+            
+            <!-- sidebar-search  -->
+            <div class="sidebar-search">
+                <div class="input-group">
+                    <input type="text" class="form-control search-menu" placeholder="Change this message ...">
+                    <div class="input-group-append">
+                    <span class="input-group-text">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </span>
+                    </div>
+                </div>
+            </div>
+            
+    
+    
+            
+            <!-- sidebar-menu 1st layer  -->
+            <div class="sidebar-menu">
+            <ul>
+                <li class="header-menu">
+                <span>General</span>
+                </li>
+                <li class="sidebar-dropdown">
+                    <a href="#">
+                        <i class="fa fa-tachometer-alt"></i>
+                        <span>Dashboard</span>
+                        <span class="badge badge-pill badge-warning">New</span>
+                    </a>
+                    <div class="sidebar-submenu">
+                        <ul>
+                        <li>
+                            <a href="https://twitter.com/covillaf" target="_blank">Dashboard 1
+                            <span class="badge badge-pill badge-success">Pro</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">Dashboard 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Dashboard 3</a>
+                        </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="sidebar-dropdown">
+                    <a href="#">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span>E-commerce</span>
+                        <span class="badge badge-pill badge-danger">3</span>
+                    </a>
+                    <div class="sidebar-submenu">
+                        <ul>
+                        <li>
+                            <a href="#">Products
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">Orders</a>
+                        </li>
+                        <li>
+                            <a href="#">Credit cart</a>
+                        </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="sidebar-dropdown">
+                    <a href="#">
+                        <i class="far fa-gem"></i>
+                        <span>Components</span>
+                    </a>
+                    <div class="sidebar-submenu">
+                        <ul>
+                        <li>
+                            <a href="#">General</a>
+                        </li>
+                        <li>
+                            <a href="#">Panels</a>
+                        </li>
+                        <li>
+                            <a href="#">Tables</a>
+                        </li>
+                        <li>
+                            <a href="#">Icons</a>
+                        </li>
+                        <li>
+                            <a href="#">Forms</a>
+                        </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="sidebar-dropdown">
+                    <a href="#">
+                        <i class="fa fa-chart-line"></i>
+                        <span>Charts</span>
+                    </a>
+                    <div class="sidebar-submenu">
+                        <ul>
+                        <li>
+                            <a href="#">Pie chart</a>
+                        </li>
+                        <li>
+                            <a href="#">Line chart</a>
+                        </li>
+                        <li>
+                            <a href="#">Bar chart</a>
+                        </li>
+                        <li>
+                            <a href="#">Histogram</a>
+                        </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="sidebar-dropdown">
+                    <a href="#">
+                        <i class="fa fa-globe"></i>
+                        <span>Maps</span>
+                    </a>
+                    <div class="sidebar-submenu">
+                        <ul>
+                        <li>
+                            <a href="#">Google maps</a>
+                        </li>
+                        <li>
+                            <a href="#">Open street map</a>
+                        </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="header-menu">
+                    <span>Extra</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-book"></i>
+                        <span>Documentation</span>
+                        <span class="badge badge-pill badge-primary">Beta</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-calendar"></i>
+                        <span>Calendar</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-folder"></i>
+                        <span>Examples</span>
+                    </a>
+                </li>
+            </ul>
+            </div>
+            <!-- endsidebar-menu  -->
+        </nav>
+
+  
+        <!-- sidebar-wrapper (Main Text) -->
+        <main class="page-content">
+        <div class="container-fluid">
+            <div class="form-group col-md-12">
+                <div class="alert alert-success" role="alert"> 
+                    <h2>Pro Sidebar</h2>
+                    <hr>
+                    <p>This is the result of some time (days actually) spent playing and learning.
+                    </p>
+                    <p> The sidebar is a slightly moified version of this repository: <a href="https://github.com/azouaoui-med/pro-sidebar-template" target="_blank">
+                        Github</a>. <a href="https://azouaoui-med.github.io/pro-sidebar-template/src/#" target="_blank">
+                        (See it live)</a> 
+                    </p>
+                    <p> The background was taken from:
+                         <a href="https://codepen.io/Dillo/pen/yLYGOPd?editors=0110" target="_blank"> Here</a> 
+                    </p>
+                    <div class="form-group col-md-12">
+                        <iframe src="https://ghbtns.com/github-btn.html?user=CoVJ&repo=sidebar&type=star&count=true&size=large" 
+                                    frameborder="0" scrolling="0" width="130" height="30" title="Star twbs/bootstrap on GitHub"></iframe>
+                        <iframe src="https://ghbtns.com/github-btn.html?user=CoVJ&repo=sidebar&type=fork&count=true&size=large" 
+                                    frameborder="0" scrolling="0" width="130" height="30" title="Star twbs/bootstrap on GitHub"></iframe>
+                    </div>
+                </div>
+            </div>
+            
+    
+            <div class="form-group col-md-12">
+                <div class="alert alert-success" role="alert">
+                <h4 class="alert-heading">New !</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+    
+                    <p>Expetenda tincidunt in sed, ex partem placerat sea, porro commodo ex eam. His putant aeterno interesset at. Usu ea mundi tincidunt, omnium virtute aliquando ius ex. Ea aperiri sententiae duo. Usu nullam dolorum quaestio ei, sit vidit facilisis ea. Per ne impedit iracundia neglegentur. Consetetur neglegentur eum ut, vis animal legimus inimicus id.</p>
+                    
+                    <p>His audiam deserunt in, eum ubique voluptatibus te. In reque dicta usu. Ne rebum dissentiet eam, vim omnis deseruisse id. Ullum deleniti vituperata at quo, insolens complectitur te eos, ea pri dico munere propriae. Vel ferri facilis ut, qui paulo ridens praesent ad. Possim alterum qui cu. Accusamus consulatu ius te, cu decore soleat appareat usu.</p>
+                    
+                    <p>Est ei erat mucius quaeque. Ei his quas phaedrum, efficiantur mediocritatem ne sed, hinc oratio blandit ei sed. Blandit gloriatur eam et. Brute noluisse per et, verear disputando neglegentur at quo. Sea quem legere ei, unum soluta ne duo. Ludus complectitur quo te, ut vide autem homero pro.</p>
+                    
+                    <p>Vis id minim dicant sensibus. Pri aliquip conclusionemque ad, ad malis evertitur torquatos his. Has ei solum harum reprimique, id illum saperet tractatos his. Ei omnis soleat antiopam quo. Ad augue inani postulant mel, mel ea qualisque forensibus.</p>
+                    
+                    <p>Lorem salutandi eu mea, eam in soleat iriure assentior. Tamquam lobortis id qui. Ea sanctus democritum mei, per eu alterum electram adversarium. Ea vix probo dicta iuvaret, posse epicurei suavitate eam an, nam et vidit menandri. Ut his accusata petentium.</p>
+                </div>
+            </div>
+    
+    
+    
+    
+            <div class="form-group col-md-12">
+                <div class="alert alert-success" role="alert">
+                    <h2>More templates</h2>
+                    <hr>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">          
+                            <div class="card rounded-0 p-0 shadow-sm">
+                                <img src="https://user-images.githubusercontent.com/25878302/58369568-a49b2480-7efc-11e9-9ca9-2be44afacda1.png" class="card-img-top rounded-0" alt="Angular pro sidebar">
+                                <div class="card-body text-center">
+                                    <h6 class="card-title">Angular Pro Sidebar</h6>
+                                    <a href="https://github.com/azouaoui-med/angular-pro-sidebar" target="_blank" class="btn btn-primary btn-sm">Github</a>
+                                    <a href="https://azouaoui-med.github.io/angular-pro-sidebar/demo/" target="_blank" class="btn btn-success btn-sm">Preview</a>
+                                </div>
+                            </div>          
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">          
+                            <div class="card rounded-0 p-0 shadow-sm">
+                                <img src="https://user-images.githubusercontent.com/25878302/58369258-33f20900-7ef8-11e9-8ff3-b277cb7ed7b4.PNG" class="card-img-top rounded-0" alt="Angular pro sidebar">
+                                <div class="card-body text-center">
+                                    <h6 class="card-title">Angular Dashboard</h6>
+                                    <a href="https://github.com/azouaoui-med/lightning-admin-angular" target="_blank" class="btn btn-primary btn-sm">Github</a>
+                                    <a href="https://azouaoui-med.github.io/lightning-admin-angular/demo/" target="_blank" class="btn btn-success btn-sm">Preview</a>
+                                </div>
+                            </div>          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </main>
+        <!-- page-content" -->
+    </div>
+
+
+    <!------------- jQuery(AJAX), Popper.js,  JS  ------------>
+    <!-- Take into account that current version of Bootstrap (slim) doesn't use AJAX -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <!------------- Main js------------>
+    <script type="text/javascript" src="src/mainjs.js"></script>
+
+    <!-- OverlayScrollbar - Plugin CSS -->
+    <link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.12.0/css/OverlayScrollbars.css" rel="stylesheet"/>
+    <link type="text/css" href="https://kingsora.github.io/OverlayScrollbars/etc/os-theme-minimal-dark.css" rel="stylesheet"/> <!-- os-theme-minimal-dark (No built-in) -->
+    <link type="text/css" href="https://kingsora.github.io/OverlayScrollbars/etc/os-theme-thin-light.css" rel="stylesheet"/> <!-- os-theme-thin-dark (No built-in) -->
+    <!-- OverlayScrollbar - Plugin JS -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.12.0/js/OverlayScrollbars.js"></script>
+
+    <!-- Animated Background -->
+    <script type="text/javascript" src="others/animatedBackground.js"></script>
+
+    <!-- Click out of Slidebar - js -->
+    <script src="mainjs.js"></script>
+
+</body>
+</html>
