@@ -18,13 +18,17 @@ jQuery(function ($) {
       });
 });
 
+
+
+
 /* --------------------Pure JS Close and Open sidebar ------------------ */
-document.getElementById("close-sidebar").addEventListener("click", closing);
+document.querySelector(".page-content").addEventListener("click", closing);
+document.getElementById("close-sidebar-button").addEventListener("click", closing);
 function  closing () {
     document.querySelector(".page-wrapper").classList.remove("toggled");
 }
 
-document.getElementById("show-sidebar").addEventListener("click", opening);
+document.getElementById("show-sidebar-button").addEventListener("click", opening);
 function  opening (){
     document.querySelector(".page-wrapper").classList.add("toggled");
 

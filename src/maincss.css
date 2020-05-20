@@ -72,6 +72,13 @@ body {
     font-size: 0.9rem;
   }
  
+  /*
+  .page-wrapper   : 
+  .sidebar-wrapper: Sidebar 
+  .page-content   : All less sidebar
+  */
+
+
   .page-wrapper .sidebar-wrapper,
   .sidebar-wrapper .sidebar-brand > a,
   .sidebar-wrapper .sidebar-dropdown > a:after,
@@ -81,8 +88,8 @@ body {
   .sidebar-wrapper .sidebar-search input.search-menu,
   .sidebar-wrapper .sidebar-search .input-group-text,
   .sidebar-wrapper .sidebar-menu ul li a,
-  #show-sidebar,
-  #close-sidebar {
+  #show-sidebar-button,
+  #close-sidebar-button {
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
@@ -117,7 +124,7 @@ body {
   }
   
   /*---------------- button menu sidebar----------------*/
-  #show-sidebar {
+  #show-sidebar-button {
     padding: 10px 20px;
     position: fixed;
     left: 0;
@@ -128,7 +135,7 @@ body {
     font-size: 20px;
     z-index: 998;
   }
-  .page-wrapper.toggled #show-sidebar {
+  .page-wrapper.toggled #show-sidebar-button {
     left: 0px;       /*How much the button menu moves when is clicked*/
   }
  
@@ -181,7 +188,7 @@ body {
     font-family: Helvetica;
     flex-grow: 1;
   }
-  .sidebar-wrapper .sidebar-brand #close-sidebar { /*Pointer to close sidebar*/
+  .sidebar-wrapper .sidebar-brand #close-sidebar-button { /*Pointer to close sidebar*/
     cursor: pointer;
     font-size: 20px;
   }
@@ -417,10 +424,10 @@ body {
       color: #ffffff;
   }
   /*----------------toggled sidebar color----------------*/
-  .page-wrapper.chiller-theme.toggled #close-sidebar {
+  .page-wrapper.chiller-theme.toggled #close-sidebar-button {
       color: #bdbdbd;
   }
-  .page-wrapper.chiller-theme.toggled #close-sidebar:hover {
+  .page-wrapper.chiller-theme.toggled #close-sidebar-button:hover {
       color: #ffffff;
   }
   /* --- */ 
