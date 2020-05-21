@@ -20,7 +20,6 @@ jQuery(function ($) {
 
 
 
-
 /* --------------------Pure JS Close and Open sidebar ------------------ */
 document.querySelector(".page-content").addEventListener("click", closing);
 document.getElementById("close-sidebar-button").addEventListener("click", closing);
@@ -36,13 +35,13 @@ function  opening (){
 
 
 /* ------------------Pure JS  Load wrapper ----------------------------- */
-/* jQuery version
+    /* jQuery version
 
         $(window).on("load", function(){
     			<!-- Remove background -->
           $(".loader-wrapper").fadeOut("slow");
         });
-*/
+    */
 window.addEventListener("load", f_loaded);
 
 function f_loaded() {
@@ -71,3 +70,33 @@ document.addEventListener("DOMContentLoaded", function() {
   OverlayScrollbars(document.querySelector("body"), {className : "os-theme-minimal-dark"});
   OverlayScrollbars(document.querySelector(".sidebar-content"), {className : "os-theme-thin-light"});
 });
+
+
+/*----------- Don't know where next come from ------------------------- */
+/*------It has nothing to do with the code. That's for sure------------ */
+
+/*------------------ Call sidebar-background ------------------------- */
+//document.querySelector(".sidebar-wrapper").classList.toggle("sidebar-background");
+    /*jQuery version
+        // toggle background image
+        $(".sidebar-wrapper").change(function (e) {
+          //e.preventDefault();
+          $('.page-wrapper').toggleClass("sidebar-background");
+        });
+    */ 
+
+
+/* ------------- Switch between background images------------ */
+    /*var bgs = "bg1";
+    $('[data-bg]').click(function () {
+        $('[data-bg]').removeClass("selected");
+        $(this).addClass("selected");
+        $('.page-wrapper').removeClass(bgs);
+        $('.page-wrapper').addClass($(this).attr('data-bg'));
+    });
+    */
+ 
+
+
+
+
