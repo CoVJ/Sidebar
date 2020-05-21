@@ -410,7 +410,16 @@ body {
     overflow-x: hidden;
   }
 
-
+  #fixed-yellow-card {
+    padding: 5px 10px;
+    position: fixed;
+    right: 5px;         /* Right side */
+    bottom: 5px;
+    border-radius: 5px 5px 5px 5px;
+    width: 150px;     /*Size of the button menu*/
+    transition-delay: 0.2s;
+    font-size: 15px;
+  }
 /* --------------------------- Styling sidebar---------------------------------------- */
 
    /*------------------------- User Info color --------------------------------*/
